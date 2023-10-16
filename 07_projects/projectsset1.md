@@ -8,6 +8,7 @@
 ## project 1
 
 ```javascript
+//Method-1
 console.log("hitesh")
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
@@ -32,6 +33,31 @@ buttons.forEach(function (button) {
     
   });
 });
+
+//Method-2
+const buttons = document.querySelectorAll('.button');
+const body = document.querySelector('body');
+buttons.forEach(function (button) {
+  button.addEventListener('click', function (colors) {
+    const color = colors.target.id;
+    switch (color) {
+      case 'grey':
+        body.style.backgroundColor = color;
+        break;
+      case 'white':
+        body.style.backgroundColor = color;
+        break;
+      case 'blue':
+        body.style.backgroundColor = color;
+        break;
+      case 'yellow':
+        body.style.backgroundColor = color;
+        break;
+      default:
+    }
+  });
+});
+
 
 
 ```
